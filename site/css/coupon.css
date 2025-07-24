@@ -1,0 +1,54 @@
+
+
+.off{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(97, 77, 25);
+    font-weight: bold;
+}
+@media(max-width:768px){
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    padding-top: 150px;
+}
+
+.claim{
+    cursor: pointer;
+}
+}
+
+@media(min-width:769px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        padding-top: 50px;
+    }
+    .coupon-box{
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        width: 420px;
+        height: 350px;
+        background: rgba(84, 80, 80, 0.05);
+        backdrop-filter: blur(10px);
+        transform: translate(-50%, -50%);
+        
+    }
+    .cnw{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+

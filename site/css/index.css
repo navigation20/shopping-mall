@@ -1,0 +1,202 @@
+/*모바일버전*/
+@media (max-width:768px){
+/*이미지 스와이퍼*/
+.pc-only{
+    display: none;
+}
+ .swiper-container img {
+  width: 100%;
+  height: auto;
+  max-height: 350px; 
+  object-fit: top; 
+  display: block;
+  margin: 0 auto;
+}
+.swiper-slide {
+ width: 100%;
+ background-repeat: no-repeat ;
+ background-size:cover;
+ text-align: center;
+ font-size: 25px;
+
+}
+.swiper-container{
+    position: relative;
+    padding-top: 60px;
+    height: 350px;
+    overflow: hidden;
+}
+.swiper-pagination{
+    position:absolute;
+    text-align: center;
+    width: 100%;
+    transform:translateY(-50px);
+    z-index: 10;   
+}
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background:black; 
+}
+/*쿠폰받기랑 X버튼*/
+.coupon-banner{
+    position: relative;
+    width: fit-content;
+    margin-top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 3;
+}
+.coupon {
+    width: 100%;
+    border: 8px;
+    object-fit: cover;
+}
+
+/*weekly best 상품들*/
+.weekly{
+    text-align: center;
+    color: rgb(131, 50, 40);
+    text-shadow: 2px 2px 5px rgba(187, 73, 73, 0.6);
+}
+.product-up{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 16px;
+}
+.product-up img{
+    width: 50%;
+    border-radius: 8px;
+    object-fit:top;
+    cursor: pointer;
+}
+.product-down{
+   margin-top: 16px;
+}
+.product-down img{
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+}
+
+
+
+/*pc버전*/
+@media (min-width:769px){
+ .mobile-only{
+        display: none;
+}
+ .swiper-container img {
+  width: 62%;
+  max-width: 100%;
+  height: 350px;
+  object-fit: top; 
+  display: block;
+  margin: 0 auto;
+}
+.swiper-slide {
+ width: 100%;
+ background-repeat: no-repeat ;
+ background-size:cover;
+ text-align: center;
+ font-size: 25px;
+
+}
+.swiper-container{
+    position: relative;
+    padding-top: 180px;
+    overflow: hidden;
+}
+.swiper-pagination{
+    position:absolute;
+    text-align: center;
+    width: 100%;
+    transform:translateY(-10px);
+    z-index: 10;   
+}
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background:black; 
+}
+.coupon-banner{
+    position: relative;
+    width: fit-content;
+    margin: 3 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 100;
+    width: 62%;
+}
+.coupon{
+    width: 100%;
+    height:50px;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.close-btn{
+    position:absolute;
+    top: 8px;
+    right: 8px;
+    color:black;
+    background: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+.close-btn:hover{
+    color:maroon;
+}
+
+.weekly{
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(25, 15, 94);
+    text-shadow: 2px 2px 5px rgba(37, 34, 125, 0.6);
+}
+.product-up{
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
+.product-up img{
+    width:30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-down{
+   display: flex;
+   justify-content: center;
+}
+.product-down img{
+    width: 62%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+ 
+
+}

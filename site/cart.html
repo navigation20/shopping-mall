@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+<header class="header">
+    <img id="menu" class="menu-navi mobile-only" src="image/menu.svg" alt="menu">
+    <img id="logo" class="mobile-only" src="image/logo.svg" alt="muzom" onclick="location.href='index.html'" >
+    <img id="pclogo" class="pc-only" src="image/pclogo.png" onclick="location.href='index.html'">
+    <div class="pc-menu pc-only"> 
+        <span class="pc-cart" onclick="location.href='cart.html'" >Cart</span>
+        <div class="pc-header-right">
+            <span onclick="location.href='login.html'">LogIn</span>
+            <span onclick="location.href='myaccount.html'" >My account</span>
+        </div>
+    </div>
+</header>
+<p class="back mobile-only" onclick="location.href='index.html'" >
+    &lt;
+</p>
+<aside>
+    <button class="close-btn mobile-only">X</button>
+    <ul class="list-top mobile-only">
+        <li style="font-size:xx-small;"><a href="myaccount.html">MyAccount</a></li>
+        <li>New</li>
+        <li>Best 10</li>
+        <li>On sale</li>
+    </ul>
+    <ul class="list-bottom mobile-only ">
+        <li>Clovar</li>
+        <li>GoldFish</li>
+        <li>JellyFish</li>
+    </ul><div class="mobile-only"><br><br><br><br><br><br><br><br><br></div>
+    <h5 class="mobile-only">PM 12:00-06:00
+    SAT,SUN,HOLIDAY OFF
+    MZ : 2025-005-123456
+    Account Holder: MUZOM CO.Ltd
+    </h5>
+
+    <ul class="pc-list pc-only">
+        <li>New</li>
+        <li>Best 10</li>
+        <li>On sale</li>
+        <li>Clovar</li>
+        <li>GoldFish</li>
+        <li>JellyFish</li>
+    </ul>
+    <div class="pc-info pc-only">
+    PM 12:00-06:00<br>
+    SAT,SUN,HOLIDAY OFF<br>
+    MZ : 2025-005-123456<br>
+    Account Holder: MUZOM CO.Ltd<br>
+    </div>
+</aside>
+<main class="cart-wrapper">
+    <section class="product-list">
+      <div class="product-box">
+        <img src="image/jellyBall.jpg" alt="Moonbell Jelly">
+        <div class="product-text">
+          <span class="product-name">Moonbell Jelly 27$</span>
+          <span class="product-qty">+5</span>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="product-box">
+        <img src="image/jellyGlass.jpg" alt="Drifty wishes">
+        <div class="product-text">
+          <span class="product-name">Drifty wishes 35$</span>
+          <span class="product-qty">+1</span><br>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="product-box">
+        <img src="image/longJelly.jpg" alt="Lucky Bloomie">
+        <div class="product-text">
+          <span class="product-name">Lucky Bloomie 33$</span>
+          <span class="product-qty">+1</span>
+        </div>
+      </div><div class="divider"></div>
+      <div class="product-box">
+        <img src="image/forest.jpg" alt="forestJellyFish">
+        <div class="product-text">
+          <span class="product-name">Forest $50</span>
+          <span class="product-qty">+3</span>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="product-box">
+        <img src="image/ice.jpg" alt="icy">
+        <div class="product-text">
+          <span class="product-name">Ice GoldFish $23</span>
+          <span class="product-qty">+2</span>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="product-box">
+        <img src="image/jellyKey.jpg" alt="key">
+        <div class="product-text">
+          <span class="product-name">Jelly key 40$</span>
+          <span class="product-qty">+1</span>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="product-box">
+        <img src="image/black.jpg" alt="음쓰봉지키링">
+        <div class="product-text">
+          <span class="product-name">Black fish 33$</span>
+          <span class="product-qty">+1</span>
+        </div>
+      </div>
+    </section>
+    <section class="order-pc pc-only">
+        <img src="image/coupon.svg" class="order-coupon-pc" onclick="location.href='coupon.html'" >
+        <div class="order-box-pc" onclick="alert('Purchase Complete!!!')" >PlaceOrder</div>
+    </section>
+   
+    <section class="coupon-area">
+      <div class="coupon-text mobile-only ">WELCOME COUPON - 20%</div>
+      <button class="apply-btn mobile-only " onclick="alert('Coupon applied!')" >apply coupon</button>
+    </section>
+    <button type="button" class="order-btn mobile-only" onclick="alert('Purchase Complete!!!')" >PlaceOrder</button>
+  </main>
+</body>
+</html>
